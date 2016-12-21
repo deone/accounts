@@ -25,7 +25,7 @@ SECRET_KEY = '!y0!!v2$5is(+!g0&$j6(qlu^9=r0t)ua=l6dx&g&l8-6l3^oy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['accounts-deone.c9users.io']
 
 
 # Application definition
@@ -77,6 +77,9 @@ WSGI_APPLICATION = 'accounts.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'sql_mode': 'traditional',
+        },
         'NAME': 'accounts',
         'USER': 'accounts_user',
         'PASSWORD': 'Acc0untS',

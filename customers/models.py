@@ -16,7 +16,7 @@ def generate_code(size=4, chars=string.digits):
 
 class Customer(models.Model):
     name = models.CharField(_('name'), max_length=80, unique=True)
-    code = models.CharField(_('code'), max_length=4, default=generate_code, editable=False)
+    code = models.CharField(_('code'), max_length=4, default=generate_code, editable=False, unique=True)
 
 """ class CustomerUser(models.Model):
     user = models.OneToOneField(User)

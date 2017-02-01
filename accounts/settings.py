@@ -31,18 +31,15 @@ ALLOWED_HOSTS = ['accounts-deone.c9users.io']
 # Application definition
 
 INSTALLED_APPS = [
+    'core.apps.CoreConfig',
+    'customers.apps.CustomersConfig',
+    'aauth.apps.AauthConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'rest_framework.authtoken',
-    'rest_auth',
-    'customers',
-    'vendors',
-    'aauth',
 ]
 
 MIDDLEWARE = [

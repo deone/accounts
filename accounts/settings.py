@@ -25,7 +25,7 @@ SECRET_KEY = '!y0!!v2$5is(+!g0&$j6(qlu^9=r0t)ua=l6dx&g&l8-6l3^oy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['accounts-deone.c9users.io']
+ALLOWED_HOSTS = [u'216.12.210.216']
 
 
 # Application definition
@@ -82,7 +82,7 @@ DATABASES = {
         'OPTIONS': {
             'sql_mode': 'traditional',
         },
-        'NAME': 'accounts',
+        'NAME': 'accounts_dev',
         'USER': 'accounts_user',
         'PASSWORD': 'Acc0untS',
         'HOST': '127.0.0.1',
